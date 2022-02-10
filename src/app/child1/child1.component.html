@@ -1,0 +1,15 @@
+<p>child1 works!</p>
+{{name}} 
+<!-- interpolation -->
+<label>Enter Your name</label><br>
+<!-- <input type="text" [ngModel] = "entername" (ngModelChange) = "onNameChange($event)"> -->
+<input type="text" [(ngModel)] = "entername" >
+
+<input type="text" [(ngModel)] = "entername2" (ngModelChange) = "onInputChange($event)">
+
+<h2>entered value</h2>
+{{entername}}
+<!-- {{displayvalue}} -->
+
+<h2>parent name</h2>
+{{parentname}}

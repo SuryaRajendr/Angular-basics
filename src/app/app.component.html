@@ -1,0 +1,33 @@
+<h2 appColor [color]="'green'">welcome to my application</h2>
+<label>please enter the parent name</label><br>
+<input type="text" [(ngModel)] = "name"><br>
+<label>please enter the parent name</label><br>
+<input type="number" [(ngModel)] = "age">
+
+<!-- <h2>child name</h2>
+{{childname}}  // this is called interpolation--> 
+<button (click)="onShowparentNameButtonClicked()">show/hide parent Name</button><br><br>
+<!-- <button (click)="onChild1ButtonClicked()">show child1</button><br><br>
+<button (click)="onChild2ButtonClicked()">show child2</button> -->
+<!-- <hr> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-child1 [parentname]="name" (onNameChange)="onChildNamechange($event)"></app-child1> -->
+
+
+<!-- // example for Directives ngIF--> 
+<div *ngIf="showParentName">
+    <h2 >Parent Name</h2>
+    <div>{{name}}</div>
+</div>
+    <h2>Parent Age</h2>
+    <div>{{age}}</div>
+
+
+<!-- Structural Directives ngFor -->
+<h1>ngFor example</h1>
+<!-- <h2 *ngFor = "let number of numbers">{{number}}</h2> -->
+<h2 *ngFor = "let test of numbers">{{test}}</h2>
+
+
+
+<!-- Atribute directives -->
